@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=7">
+	    <title>
+			{% block title %}{{ _("Tornado-ExtJS Glue Example") }}{% end %}
+		</title>
+	
+		<link rel="stylesheet" type="text/css" href="{{ static_url("resources/css/ext-all.css") }}">
+
+	</head>
+	<body>
+	    
+	    <span>Navigate to <i>/api/page</i> <i>/api/comment</i> and <i>/api/tag</i> to see your REST API in action</span>
+		
+		<script type="text/javascript" src="{{ static_url(extjs_lib_path) }}"></script>
+		<!-- For debug purposes loader is better be enabled -->
+		<script type="text/javascript">
+		Ext.Loader.setConfig({
+        	enabled: true
+        });
+		</script>
+		<script type="text/javascript" src="{{ static_url(appjs_path) }}"></script>
+
+	</body>
+</html>
