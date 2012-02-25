@@ -6,16 +6,14 @@ from sqlalchemy import create_engine
 from teg.model import TegModel, JsonType
 
 metadata = schema.MetaData()
-
-def now():
-    return datetime.datetime.now()
+now = datetime.datetime.now
 
 # Define DB tables
 page_table = schema.Table('page', metadata,
     schema.Column('id', types.Integer,
         schema.Sequence('page_seq_id', optional=True), primary_key=True),
     schema.Column('content', JsonType(), nullable=False, default={}),
-    schema.Column('posted', types.DateTime(), default=now),
+    schema.Column('posted', types.TIMESTAMP(), nullable=False, default=now),
     schema.Column('title', types.Unicode(255), default=u'Untitled Page'),
     schema.Column('heading', types.Unicode(255)),
 )

@@ -1,6 +1,7 @@
 import teg
 import teg.controller
 import model
+import time
 
 # Example API implementations
 
@@ -17,6 +18,23 @@ class Page(teg.controller.Controller):
         
         #return jsonified data with paging
         return self.generic_get(query, oid, 'pages')
+        
+    @teg.controller.jsonify
+    def post(self):
+        #create a new page
+        data = self.get_request_json()
+        page = model.Page()
+        
+        #validate as needed
+        for key in data: 
+            if data[key]: 
+                setattr(page, key, data[key])
+        
+        #save it with sqlalchemy
+        model.session.add(page)
+        model.session.commit()
+        #return new object
+        return self.generic_get(model.session.query(model.Page), page.id, 'pages')
         
         
 class Comment(teg.controller.Controller):

@@ -7,12 +7,16 @@
 			{% block title %}{{ _("Tornado-ExtJS Glue Example") }}{% end %}
 		</title>
 	
-		<link rel="stylesheet" type="text/css" href="{{ static_url("resources/css/ext-all.css") }}">
+		<link rel="stylesheet" type="text/css" href="{{ static_url("ext-4.0/resources/css/ext-all.css") }}">
 
 	</head>
 	<body>
 	    
 	    <span>Navigate to <i>/api/page</i> <i>/api/comment</i> and <i>/api/tag</i> to see your REST API in action</span>
+	    
+	    <br/>
+	    
+	    <div id="example"></div>
 		
 		<script type="text/javascript" src="{{ static_url(extjs_lib_path) }}"></script>
 		<!-- For debug purposes loader is better be enabled -->

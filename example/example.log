@@ -501,3 +501,568 @@ FROM page
 17:52:40,792 WARNI [root] 404 GET /static/resources/css/ext-all.css (127.0.0.1) 0.57ms
 17:52:40,793 WARNI [root] 404 GET /static/ext-4.0/ext-all-debug.js (127.0.0.1) 0.34ms
 17:52:40,794 WARNI [root] 404 GET /static/app.js (127.0.0.1) 0.33ms
+21:26:58,843 INFO  [root] --------------- session started -----------------------
+21:26:58,859 INFO  [root] logging facility to "example.log"
+21:26:58,860 DEBUG [root] logger options: debug=True size=1048576 copies=5 rotating=False
+21:27:18,032 INFO  [root] 302 GET / (127.0.0.1) 1.10ms
+21:27:18,050 ERROR [root] Could not open static file 'resources/css/ext-all.css'
+21:27:18,051 ERROR [root] Could not open static file 'ext-4.0/ext-all-debug.js'
+21:27:18,051 ERROR [root] Could not open static file 'app.js'
+21:27:18,051 INFO  [root] 200 GET /ui (127.0.0.1) 11.13ms
+21:27:18,106 WARNI [root] 404 GET /static/app.js (127.0.0.1) 0.60ms
+21:27:18,118 WARNI [root] 404 GET /static/ext-4.0/ext-all-debug.js (127.0.0.1) 0.38ms
+21:27:18,119 WARNI [root] 404 GET /static/resources/css/ext-all.css (127.0.0.1) 0.31ms
+21:36:42,212 INFO  [root] 200 GET /ui (127.0.0.1) 0.50ms
+21:36:42,250 WARNI [root] 404 GET /static/app.js (127.0.0.1) 0.44ms
+21:36:42,253 WARNI [root] 404 GET /static/resources/css/ext-all.css (127.0.0.1) 0.42ms
+21:36:42,255 WARNI [root] 404 GET /static/ext-4.0/ext-all-debug.js (127.0.0.1) 0.36ms
+21:36:54,203 INFO  [root] --------------- session started -----------------------
+21:36:54,203 INFO  [root] logging facility to "example.log"
+21:36:54,203 DEBUG [root] logger options: debug=True size=1048576 copies=5 rotating=False
+21:36:56,684 ERROR [root] Could not open static file 'resources/css/ext-all.css'
+21:36:56,684 ERROR [root] Could not open static file 'ext-4.0/ext-all-debug.js'
+21:36:56,684 ERROR [root] Could not open static file 'app.js'
+21:36:56,685 INFO  [root] 200 GET /ui (127.0.0.1) 6.06ms
+21:36:56,756 WARNI [root] 404 GET /static/app.js (127.0.0.1) 0.44ms
+21:36:56,760 WARNI [root] 404 GET /static/resources/css/ext-all.css (127.0.0.1) 0.50ms
+21:36:56,762 WARNI [root] 404 GET /static/ext-4.0/ext-all-debug.js (127.0.0.1) 0.37ms
+21:37:49,444 INFO  [root] --------------- session started -----------------------
+21:37:49,444 INFO  [root] logging facility to "example.log"
+21:37:49,444 DEBUG [root] logger options: debug=True size=1048576 copies=5 rotating=False
+21:37:52,040 ERROR [root] Could not open static file 'resources/css/ext-all.css'
+21:37:52,051 INFO  [root] 200 GET /ui (127.0.0.1) 15.55ms
+21:37:52,211 INFO  [root] 200 GET /static/ext-4.0/ext-all-debug.js?v=e5098 (127.0.0.1) 84.75ms
+21:37:52,235 INFO  [root] 200 GET /static/app.js?v=7219b (127.0.0.1) 0.83ms
+21:37:52,236 WARNI [root] 404 GET /static/resources/css/ext-all.css (127.0.0.1) 0.41ms
+21:37:52,564 DEBUG [teg.controller] no filter arguments
+21:37:52,564 DEBUG [teg.controller] no sort arguments
+21:37:52,564 DEBUG [teg.controller] arguments: {'start': ['0'], '_dc': ['1330191472550'], 'limit': ['25'], 'page': ['1']}
+21:37:52,567 INFO  [sqlalchemy.engine.base.Engine] BEGIN (implicit)
+21:37:52,568 INFO  [sqlalchemy.engine.base.Engine] SELECT count(*) AS count_1 
+FROM (SELECT page.id AS page_id, page.content AS page_content, page.posted AS page_posted, page.title AS page_title, page.heading AS page_heading 
+FROM page) AS anon_1
+21:37:52,568 INFO  [sqlalchemy.engine.base.Engine] ()
+21:37:52,570 DEBUG [teg.controller] get page 1, offset 0, limit 25
+21:37:52,570 DEBUG [teg.controller] (SELECT page.id, page.content, page.posted, page.title, page.heading 
+FROM page
+ LIMIT :param_1)
+21:37:52,572 INFO  [sqlalchemy.engine.base.Engine] SELECT page.id AS page_id, page.content AS page_content, page.posted AS page_posted, page.title AS page_title, page.heading AS page_heading 
+FROM page
+ LIMIT ? OFFSET ?
+21:37:52,572 INFO  [sqlalchemy.engine.base.Engine] (25, 0)
+21:37:52,573 DEBUG [teg.controller] 0 objects in page, 0 total objects
+21:37:52,573 INFO  [root] 200 GET /api/page?_dc=1330191472550&page=1&start=0&limit=25 (127.0.0.1) 14.31ms
+21:38:17,688 INFO  [root] 200 GET /ui (127.0.0.1) 0.42ms
+21:38:17,755 INFO  [root] 200 GET /static/app.js?v=7219b (127.0.0.1) 16.98ms
+21:38:17,757 WARNI [root] 404 GET /static/resources/css/ext-all.css (127.0.0.1) 0.40ms
+21:38:17,759 INFO  [root] 304 GET /static/ext-4.0/ext-all-debug.js?v=e5098 (127.0.0.1) 0.56ms
+21:38:18,214 DEBUG [teg.controller] no filter arguments
+21:38:18,215 DEBUG [teg.controller] no sort arguments
+21:38:18,224 DEBUG [teg.controller] arguments: {'start': ['0'], '_dc': ['1330191498193'], 'limit': ['25'], 'page': ['1']}
+21:38:18,227 INFO  [sqlalchemy.engine.base.Engine] SELECT count(*) AS count_1 
+FROM (SELECT page.id AS page_id, page.content AS page_content, page.posted AS page_posted, page.title AS page_title, page.heading AS page_heading 
+FROM page) AS anon_1
+21:38:18,228 INFO  [sqlalchemy.engine.base.Engine] ()
+21:38:18,233 DEBUG [teg.controller] get page 1, offset 0, limit 25
+21:38:18,234 DEBUG [teg.controller] (SELECT page.id, page.content, page.posted, page.title, page.heading 
+FROM page
+ LIMIT :param_1)
+21:38:18,235 INFO  [sqlalchemy.engine.base.Engine] SELECT page.id AS page_id, page.content AS page_content, page.posted AS page_posted, page.title AS page_title, page.heading AS page_heading 
+FROM page
+ LIMIT ? OFFSET ?
+21:38:18,236 INFO  [sqlalchemy.engine.base.Engine] (25, 0)
+21:38:18,236 DEBUG [teg.controller] 0 objects in page, 0 total objects
+21:38:18,236 INFO  [root] 200 GET /api/page?_dc=1330191498193&page=1&start=0&limit=25 (127.0.0.1) 22.20ms
+21:38:37,693 INFO  [root] --------------- session started -----------------------
+21:38:37,693 INFO  [root] logging facility to "example.log"
+21:38:37,693 DEBUG [root] logger options: debug=True size=1048576 copies=5 rotating=False
+21:38:40,837 INFO  [root] 200 GET /ui (127.0.0.1) 16.24ms
+21:38:40,895 INFO  [root] 200 GET /static/app.js?v=b9029 (127.0.0.1) 8.60ms
+21:38:40,898 INFO  [root] 304 GET /static/ext-4.0/ext-all-debug.js?v=e5098 (127.0.0.1) 0.63ms
+21:38:40,902 INFO  [root] 200 GET /static/ext-4.0/resources/css/ext-all.css?v=c827c (127.0.0.1) 2.35ms
+21:38:41,586 INFO  [root] 200 GET /static/ext-4.0/resources/themes/images/default/form/text-bg.gif (127.0.0.1) 0.68ms
+21:38:41,678 INFO  [root] 200 GET /static/ext-4.0/resources/themes/images/default/form/exclamation.gif (127.0.0.1) 27.35ms
+21:38:41,679 INFO  [root] 200 GET /static/ext-4.0/resources/themes/images/default/dd/drop-no.gif (127.0.0.1) 0.55ms
+21:38:41,680 INFO  [root] 200 GET /static/ext-4.0/resources/themes/images/default/grid/grid3-hd-btn.gif (127.0.0.1) 0.43ms
+21:38:41,685 INFO  [root] 200 GET /static/ext-4.0/resources/themes/images/default/grid/loading.gif (127.0.0.1) 0.57ms
+21:38:41,690 DEBUG [teg.controller] no filter arguments
+21:38:41,690 DEBUG [teg.controller] no sort arguments
+21:38:41,691 DEBUG [teg.controller] arguments: {'start': ['0'], '_dc': ['1330191521639'], 'limit': ['25'], 'page': ['1']}
+21:38:41,694 INFO  [sqlalchemy.engine.base.Engine] BEGIN (implicit)
+21:38:41,696 INFO  [sqlalchemy.engine.base.Engine] SELECT count(*) AS count_1 
+FROM (SELECT page.id AS page_id, page.content AS page_content, page.posted AS page_posted, page.title AS page_title, page.heading AS page_heading 
+FROM page) AS anon_1
+21:38:41,697 INFO  [sqlalchemy.engine.base.Engine] ()
+21:38:41,698 DEBUG [teg.controller] get page 1, offset 0, limit 25
+21:38:41,699 DEBUG [teg.controller] (SELECT page.id, page.content, page.posted, page.title, page.heading 
+FROM page
+ LIMIT :param_1)
+21:38:41,700 INFO  [sqlalchemy.engine.base.Engine] SELECT page.id AS page_id, page.content AS page_content, page.posted AS page_posted, page.title AS page_title, page.heading AS page_heading 
+FROM page
+ LIMIT ? OFFSET ?
+21:38:41,701 INFO  [sqlalchemy.engine.base.Engine] (25, 0)
+21:38:41,702 DEBUG [teg.controller] 0 objects in page, 0 total objects
+21:38:41,702 INFO  [root] 200 GET /api/page?_dc=1330191521639&page=1&start=0&limit=25 (127.0.0.1) 17.37ms
+21:39:11,804 INFO  [root] 200 GET /static/ext-4.0/resources/themes/images/default/grid/invalid_line.gif (127.0.0.1) 0.71ms
+21:39:42,457 INFO  [root] 200 GET /ui (127.0.0.1) 0.50ms
+21:39:42,529 INFO  [root] 200 GET /static/app.js?v=b9029 (127.0.0.1) 0.83ms
+21:39:42,535 INFO  [root] 304 GET /static/ext-4.0/ext-all-debug.js?v=e5098 (127.0.0.1) 0.65ms
+21:39:42,536 INFO  [root] 304 GET /static/ext-4.0/resources/css/ext-all.css?v=c827c (127.0.0.1) 0.64ms
+21:39:43,019 INFO  [root] 304 GET /static/ext-4.0/resources/themes/images/default/form/text-bg.gif (127.0.0.1) 0.61ms
+21:39:43,079 INFO  [root] 304 GET /static/ext-4.0/resources/themes/images/default/grid/loading.gif (127.0.0.1) 1.31ms
+21:39:43,080 INFO  [root] 304 GET /static/ext-4.0/resources/themes/images/default/form/exclamation.gif (127.0.0.1) 0.60ms
+21:39:43,082 INFO  [root] 304 GET /static/ext-4.0/resources/themes/images/default/grid/grid3-hd-btn.gif (127.0.0.1) 0.54ms
+21:39:43,085 DEBUG [teg.controller] no filter arguments
+21:39:43,086 DEBUG [teg.controller] no sort arguments
+21:39:43,086 DEBUG [teg.controller] arguments: {'start': ['0'], '_dc': ['1330191583065'], 'limit': ['25'], 'page': ['1']}
+21:39:43,089 INFO  [sqlalchemy.engine.base.Engine] SELECT count(*) AS count_1 
+FROM (SELECT page.id AS page_id, page.content AS page_content, page.posted AS page_posted, page.title AS page_title, page.heading AS page_heading 
+FROM page) AS anon_1
+21:39:43,090 INFO  [sqlalchemy.engine.base.Engine] ()
+21:39:43,092 DEBUG [teg.controller] get page 1, offset 0, limit 25
+21:39:43,093 DEBUG [teg.controller] (SELECT page.id, page.content, page.posted, page.title, page.heading 
+FROM page
+ LIMIT :param_1)
+21:39:43,095 INFO  [sqlalchemy.engine.base.Engine] SELECT page.id AS page_id, page.content AS page_content, page.posted AS page_posted, page.title AS page_title, page.heading AS page_heading 
+FROM page
+ LIMIT ? OFFSET ?
+21:39:43,096 INFO  [sqlalchemy.engine.base.Engine] (25, 0)
+21:39:43,097 DEBUG [teg.controller] 0 objects in page, 0 total objects
+21:39:43,097 INFO  [root] 200 GET /api/page?_dc=1330191583065&page=1&start=0&limit=25 (127.0.0.1) 12.39ms
+21:39:43,098 INFO  [root] 304 GET /static/ext-4.0/resources/themes/images/default/dd/drop-no.gif (127.0.0.1) 0.46ms
+21:39:48,061 WARNI [root] 405 POST /api/page?_dc=1330191588040 (127.0.0.1) 0.36ms
+21:39:48,176 INFO  [root] 200 GET /static/ext-4.0/resources/themes/images/default/tools/tool-sprites.gif (127.0.0.1) 0.73ms
+21:39:48,178 INFO  [root] 200 GET /static/ext-4.0/resources/themes/images/default/shared/icon-error.gif (127.0.0.1) 0.60ms
+22:22:45,797 INFO  [root] --------------- session started -----------------------
+22:22:45,797 INFO  [root] logging facility to "example.log"
+22:22:45,797 DEBUG [root] logger options: debug=True size=1048576 copies=5 rotating=False
+22:22:49,225 INFO  [root] 200 GET /ui (127.0.0.1) 15.12ms
+22:22:49,283 INFO  [root] 304 GET /static/ext-4.0/ext-all-debug.js?v=e5098 (127.0.0.1) 8.99ms
+22:22:49,285 INFO  [root] 304 GET /static/ext-4.0/resources/css/ext-all.css?v=c827c (127.0.0.1) 0.65ms
+22:22:49,289 INFO  [root] 200 GET /static/app.js?v=3c752 (127.0.0.1) 0.64ms
+22:22:49,777 INFO  [root] 304 GET /static/ext-4.0/resources/themes/images/default/form/text-bg.gif (127.0.0.1) 0.69ms
+22:22:49,810 INFO  [root] 304 GET /static/ext-4.0/resources/themes/images/default/form/exclamation.gif (127.0.0.1) 0.69ms
+22:22:49,821 INFO  [root] 304 GET /static/ext-4.0/resources/themes/images/default/grid/grid3-hd-btn.gif (127.0.0.1) 0.59ms
+22:22:49,822 INFO  [root] 304 GET /static/ext-4.0/resources/themes/images/default/dd/drop-no.gif (127.0.0.1) 0.42ms
+22:22:49,887 DEBUG [teg.controller] no filter arguments
+22:22:49,887 DEBUG [teg.controller] no sort arguments
+22:22:49,888 DEBUG [teg.controller] arguments: {'start': ['0'], '_dc': ['1330194169862'], 'limit': ['25'], 'page': ['1']}
+22:22:49,890 INFO  [sqlalchemy.engine.base.Engine] BEGIN (implicit)
+22:22:49,891 INFO  [sqlalchemy.engine.base.Engine] SELECT count(*) AS count_1 
+FROM (SELECT page.id AS page_id, page.content AS page_content, page.posted AS page_posted, page.title AS page_title, page.heading AS page_heading 
+FROM page) AS anon_1
+22:22:49,891 INFO  [sqlalchemy.engine.base.Engine] ()
+22:22:49,892 DEBUG [teg.controller] get page 1, offset 0, limit 25
+22:22:49,893 DEBUG [teg.controller] (SELECT page.id, page.content, page.posted, page.title, page.heading 
+FROM page
+ LIMIT :param_1)
+22:22:49,913 INFO  [sqlalchemy.engine.base.Engine] SELECT page.id AS page_id, page.content AS page_content, page.posted AS page_posted, page.title AS page_title, page.heading AS page_heading 
+FROM page
+ LIMIT ? OFFSET ?
+22:22:49,914 INFO  [sqlalchemy.engine.base.Engine] (25, 0)
+22:22:49,915 DEBUG [teg.controller] 0 objects in page, 0 total objects
+22:22:49,916 INFO  [root] 200 GET /api/page?_dc=1330194169862&page=1&start=0&limit=25 (127.0.0.1) 33.00ms
+22:22:49,917 INFO  [root] 304 GET /static/ext-4.0/resources/themes/images/default/grid/loading.gif (127.0.0.1) 0.52ms
+22:22:55,367 ERROR [root] Uncaught exception POST /api/page?_dc=1330194175350 (127.0.0.1)
+HTTPRequest(protocol='http', host='127.0.0.1:8080', method='POST', uri='/api/page?_dc=1330194175350', version='HTTP/1.1', remote_ip='127.0.0.1', body='{"id":null,"posted":"","content":"asd","title":"asd","heading":"asd"}', headers={'Origin': 'http://127.0.0.1:8080', 'Content-Length': '69', 'Accept-Language': 'en-us', 'Accept-Encoding': 'gzip, deflate', 'Host': '127.0.0.1:8080', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.52.7 (KHTML, like Gecko) Version/5.1.2 Safari/534.52.7', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8080/ui', 'Cookie': 'auth_token=eyJhaSI6IDMsICJwaSI6IDMsICJhYiI6ICJhcHAxIiwgInJiIjogInJ0MSIsICJwdCI6ICJ1In0=|1330108876|14598b7bff5060b3e6d13a11f95efdd7a1e713cd; user_locale=ZW5fVVM=|1329910444|13a77a78d97b2531fdc4de8c0f90fbb10eec2a11', 'Content-Type': 'application/json'})
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado-1.2.1-py2.7.egg/tornado/web.py", line 861, in _execute
+    getattr(self, self.request.method.lower())(*args, **kwargs)
+  File "/Users/Stan/Sources/tornado-extjs-glue/teg/controller.py", line 51, in wrapper
+    answer = method(self, *args, **kwargs)
+  File "/Users/Stan/Sources/tornado-extjs-glue/example/api.py", line 25, in post
+    page = model.Page(**data)
+TypeError: __init__() got an unexpected keyword argument 'content'
+22:22:55,412 ERROR [root] 500 POST /api/page?_dc=1330194175350 (127.0.0.1) 45.57ms
+22:22:55,522 INFO  [root] 304 GET /static/ext-4.0/resources/themes/images/default/tools/tool-sprites.gif (127.0.0.1) 1.55ms
+22:22:55,523 INFO  [root] 304 GET /static/ext-4.0/resources/themes/images/default/shared/icon-error.gif (127.0.0.1) 0.50ms
+22:25:12,264 INFO  [root] --------------- session started -----------------------
+22:25:12,264 INFO  [root] logging facility to "example.log"
+22:25:12,264 DEBUG [root] logger options: debug=True size=1048576 copies=5 rotating=False
+22:25:18,110 INFO  [root] --------------- session started -----------------------
+22:25:18,110 INFO  [root] logging facility to "example.log"
+22:25:18,110 DEBUG [root] logger options: debug=True size=1048576 copies=5 rotating=False
+22:25:24,005 ERROR [root] Uncaught exception POST /api/page?_dc=1330194323990 (127.0.0.1)
+HTTPRequest(protocol='http', host='127.0.0.1:8080', method='POST', uri='/api/page?_dc=1330194323990', version='HTTP/1.1', remote_ip='127.0.0.1', body='{"id":null,"posted":"","content":"asd","title":"asd","heading":"asd"}', headers={'Origin': 'http://127.0.0.1:8080', 'Content-Length': '69', 'Accept-Language': 'en-us', 'Accept-Encoding': 'gzip, deflate', 'Host': '127.0.0.1:8080', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.52.7 (KHTML, like Gecko) Version/5.1.2 Safari/534.52.7', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8080/ui', 'Cookie': 'auth_token=eyJhaSI6IDMsICJwaSI6IDMsICJhYiI6ICJhcHAxIiwgInJiIjogInJ0MSIsICJwdCI6ICJ1In0=|1330108876|14598b7bff5060b3e6d13a11f95efdd7a1e713cd; user_locale=ZW5fVVM=|1329910444|13a77a78d97b2531fdc4de8c0f90fbb10eec2a11', 'Content-Type': 'application/json'})
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado-1.2.1-py2.7.egg/tornado/web.py", line 861, in _execute
+    getattr(self, self.request.method.lower())(*args, **kwargs)
+  File "/Users/Stan/Sources/tornado-extjs-glue/teg/controller.py", line 51, in wrapper
+    answer = method(self, *args, **kwargs)
+  File "/Users/Stan/Sources/tornado-extjs-glue/example/api.py", line 25, in post
+    page = model.Page.from_json(data)
+  File "/Users/Stan/Sources/tornado-extjs-glue/teg/model.py", line 39, in from_json
+    inst.update(data)
+  File "/Users/Stan/Sources/tornado-extjs-glue/teg/model.py", line 44, in update
+    for name in self.attribute_names():
+  File "/Users/Stan/Sources/tornado-extjs-glue/teg/model.py", line 27, in attribute_names
+    return [prop.key for prop in class_mapper(cls).iterate_properties if isinstance(prop, ColumnProperty)]
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/SQLAlchemy-0.7.0-py2.7-macosx-10.6-intel.egg/sqlalchemy/orm/util.py", line 546, in class_mapper
+    raise exc.UnmappedClassError(class_)
+UnmappedClassError: Class '<model.Page object at 0x101af9350>' is not mapped
+22:25:24,038 ERROR [root] 500 POST /api/page?_dc=1330194323990 (127.0.0.1) 37.72ms
+22:26:34,517 INFO  [root] --------------- session started -----------------------
+22:26:34,517 INFO  [root] logging facility to "example.log"
+22:26:34,517 DEBUG [root] logger options: debug=True size=1048576 copies=5 rotating=False
+22:26:40,297 ERROR [root] Uncaught exception POST /api/page?_dc=1330194400186 (127.0.0.1)
+HTTPRequest(protocol='http', host='127.0.0.1:8080', method='POST', uri='/api/page?_dc=1330194400186', version='HTTP/1.1', remote_ip='127.0.0.1', body='{"id":null,"posted":"","content":"asd","title":"asd","heading":"asd"}', headers={'Origin': 'http://127.0.0.1:8080', 'Content-Length': '69', 'Accept-Language': 'en-us', 'Accept-Encoding': 'gzip, deflate', 'Host': '127.0.0.1:8080', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.52.7 (KHTML, like Gecko) Version/5.1.2 Safari/534.52.7', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8080/ui', 'Cookie': 'auth_token=eyJhaSI6IDMsICJwaSI6IDMsICJhYiI6ICJhcHAxIiwgInJiIjogInJ0MSIsICJwdCI6ICJ1In0=|1330108876|14598b7bff5060b3e6d13a11f95efdd7a1e713cd; user_locale=ZW5fVVM=|1329910444|13a77a78d97b2531fdc4de8c0f90fbb10eec2a11', 'Content-Type': 'application/json'})
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado-1.2.1-py2.7.egg/tornado/web.py", line 861, in _execute
+    getattr(self, self.request.method.lower())(*args, **kwargs)
+  File "/Users/Stan/Sources/tornado-extjs-glue/teg/controller.py", line 51, in wrapper
+    answer = method(self, *args, **kwargs)
+  File "/Users/Stan/Sources/tornado-extjs-glue/example/api.py", line 28, in post
+    page.update(data)
+  File "/Users/Stan/Sources/tornado-extjs-glue/teg/model.py", line 37, in update
+    for name in self.attribute_names():
+  File "/Users/Stan/Sources/tornado-extjs-glue/teg/model.py", line 27, in attribute_names
+    return [prop.key for prop in class_mapper(cls).iterate_properties if isinstance(prop, ColumnProperty)]
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/SQLAlchemy-0.7.0-py2.7-macosx-10.6-intel.egg/sqlalchemy/orm/util.py", line 546, in class_mapper
+    raise exc.UnmappedClassError(class_)
+UnmappedClassError: Class '<model.Page object at 0x101af9210>' is not mapped
+22:26:40,302 ERROR [root] 500 POST /api/page?_dc=1330194400186 (127.0.0.1) 9.43ms
+22:28:50,631 INFO  [root] --------------- session started -----------------------
+22:28:50,631 INFO  [root] logging facility to "example.log"
+22:28:50,631 DEBUG [root] logger options: debug=True size=1048576 copies=5 rotating=False
+22:28:57,277 INFO  [sqlalchemy.engine.base.Engine] BEGIN (implicit)
+22:28:57,279 INFO  [sqlalchemy.engine.base.Engine] ROLLBACK
+22:28:57,280 ERROR [root] Uncaught exception POST /api/page?_dc=1330194537166 (127.0.0.1)
+HTTPRequest(protocol='http', host='127.0.0.1:8080', method='POST', uri='/api/page?_dc=1330194537166', version='HTTP/1.1', remote_ip='127.0.0.1', body='{"id":null,"posted":"","content":"asd","title":"asd","heading":"asd"}', headers={'Origin': 'http://127.0.0.1:8080', 'Content-Length': '69', 'Accept-Language': 'en-us', 'Accept-Encoding': 'gzip, deflate', 'Host': '127.0.0.1:8080', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.52.7 (KHTML, like Gecko) Version/5.1.2 Safari/534.52.7', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8080/ui', 'Cookie': 'auth_token=eyJhaSI6IDMsICJwaSI6IDMsICJhYiI6ICJhcHAxIiwgInJiIjogInJ0MSIsICJwdCI6ICJ1In0=|1330108876|14598b7bff5060b3e6d13a11f95efdd7a1e713cd; user_locale=ZW5fVVM=|1329910444|13a77a78d97b2531fdc4de8c0f90fbb10eec2a11', 'Content-Type': 'application/json'})
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado-1.2.1-py2.7.egg/tornado/web.py", line 861, in _execute
+    getattr(self, self.request.method.lower())(*args, **kwargs)
+  File "/Users/Stan/Sources/tornado-extjs-glue/teg/controller.py", line 51, in wrapper
+    answer = method(self, *args, **kwargs)
+  File "/Users/Stan/Sources/tornado-extjs-glue/example/api.py", line 32, in post
+    model.session.commit()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/SQLAlchemy-0.7.0-py2.7-macosx-10.6-intel.egg/sqlalchemy/orm/scoping.py", line 113, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/SQLAlchemy-0.7.0-py2.7-macosx-10.6-intel.egg/sqlalchemy/orm/session.py", line 617, in commit
+    self.transaction.commit()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/SQLAlchemy-0.7.0-py2.7-macosx-10.6-intel.egg/sqlalchemy/orm/session.py", line 293, in commit
+    self._prepare_impl()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/SQLAlchemy-0.7.0-py2.7-macosx-10.6-intel.egg/sqlalchemy/orm/session.py", line 277, in _prepare_impl
+    self.session.flush()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/SQLAlchemy-0.7.0-py2.7-macosx-10.6-intel.egg/sqlalchemy/orm/session.py", line 1466, in flush
+    self._flush(objects)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/SQLAlchemy-0.7.0-py2.7-macosx-10.6-intel.egg/sqlalchemy/orm/session.py", line 1535, in _flush
+    flush_context.execute()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/SQLAlchemy-0.7.0-py2.7-macosx-10.6-intel.egg/sqlalchemy/orm/unitofwork.py", line 327, in execute
+    rec.execute(self)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/SQLAlchemy-0.7.0-py2.7-macosx-10.6-intel.egg/sqlalchemy/orm/unitofwork.py", line 471, in execute
+    uow
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/SQLAlchemy-0.7.0-py2.7-macosx-10.6-intel.egg/sqlalchemy/orm/mapper.py", line 2105, in _save_obj
+    execute(statement, params)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/SQLAlchemy-0.7.0-py2.7-macosx-10.6-intel.egg/sqlalchemy/engine/base.py", line 1294, in execute
+    params)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/SQLAlchemy-0.7.0-py2.7-macosx-10.6-intel.egg/sqlalchemy/engine/base.py", line 1427, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/SQLAlchemy-0.7.0-py2.7-macosx-10.6-intel.egg/sqlalchemy/engine/base.py", line 1494, in _execute_context
+    None, None)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/SQLAlchemy-0.7.0-py2.7-macosx-10.6-intel.egg/sqlalchemy/engine/base.py", line 1490, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/SQLAlchemy-0.7.0-py2.7-macosx-10.6-intel.egg/sqlalchemy/engine/default.py", line 448, in _init_compiled
+    param.append(processors[key](compiled_params[key]))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/SQLAlchemy-0.7.0-py2.7-macosx-10.6-intel.egg/sqlalchemy/dialects/sqlite/base.py", line 132, in process
+    raise TypeError("SQLite DateTime type only accepts Python "
+StatementError: SQLite DateTime type only accepts Python datetime and date objects as input. 'INSERT INTO page (content, posted, title, heading) VALUES (?, ?, ?, ?)' [{'content': u'asd', 'title': u'asd', 'heading': u'asd', 'posted': u''}]
+22:28:57,348 ERROR [root] 500 POST /api/page?_dc=1330194537166 (127.0.0.1) 76.35ms
+22:29:39,257 INFO  [root] --------------- session started -----------------------
+22:29:39,257 INFO  [root] logging facility to "example.log"
+22:29:39,257 DEBUG [root] logger options: debug=True size=1048576 copies=5 rotating=False
+22:29:41,786 INFO  [root] 200 GET /ui (127.0.0.1) 15.34ms
+22:29:41,844 INFO  [root] 304 GET /static/ext-4.0/ext-all-debug.js?v=e5098 (127.0.0.1) 8.65ms
+22:29:41,847 INFO  [root] 304 GET /static/app.js?v=3c752 (127.0.0.1) 0.63ms
+22:29:41,849 INFO  [root] 304 GET /static/ext-4.0/resources/css/ext-all.css?v=c827c (127.0.0.1) 0.65ms
+22:29:42,281 INFO  [root] 304 GET /static/ext-4.0/resources/themes/images/default/form/text-bg.gif (127.0.0.1) 0.63ms
+22:29:42,303 INFO  [root] 304 GET /static/ext-4.0/resources/themes/images/default/dd/drop-no.gif (127.0.0.1) 0.55ms
+22:29:42,304 INFO  [root] 304 GET /static/ext-4.0/resources/themes/images/default/grid/grid3-hd-btn.gif (127.0.0.1) 0.73ms
+22:29:42,305 INFO  [root] 304 GET /static/ext-4.0/resources/themes/images/default/form/exclamation.gif (127.0.0.1) 0.57ms
+22:29:42,369 INFO  [root] 304 GET /static/ext-4.0/resources/themes/images/default/grid/loading.gif (127.0.0.1) 0.56ms
+22:29:42,374 DEBUG [teg.controller] no filter arguments
+22:29:42,375 DEBUG [teg.controller] no sort arguments
+22:29:42,375 DEBUG [teg.controller] arguments: {'start': ['0'], '_dc': ['1330194582337'], 'limit': ['25'], 'page': ['1']}
+22:29:42,378 INFO  [sqlalchemy.engine.base.Engine] BEGIN (implicit)
+22:29:42,380 INFO  [sqlalchemy.engine.base.Engine] SELECT count(*) AS count_1 
+FROM (SELECT page.id AS page_id, page.content AS page_content, page.posted AS page_posted, page.title AS page_title, page.heading AS page_heading 
+FROM page) AS anon_1
+22:29:42,386 INFO  [sqlalchemy.engine.base.Engine] ()
+22:29:42,388 DEBUG [teg.controller] get page 1, offset 0, limit 25
+22:29:42,389 DEBUG [teg.controller] (SELECT page.id, page.content, page.posted, page.title, page.heading 
+FROM page
+ LIMIT :param_1)
+22:29:42,391 INFO  [sqlalchemy.engine.base.Engine] SELECT page.id AS page_id, page.content AS page_content, page.posted AS page_posted, page.title AS page_title, page.heading AS page_heading 
+FROM page
+ LIMIT ? OFFSET ?
+22:29:42,391 INFO  [sqlalchemy.engine.base.Engine] (25, 0)
+22:29:42,393 DEBUG [teg.controller] 0 objects in page, 0 total objects
+22:29:42,393 INFO  [root] 200 GET /api/page?_dc=1330194582337&page=1&start=0&limit=25 (127.0.0.1) 23.71ms
+22:29:46,095 INFO  [sqlalchemy.engine.base.Engine] INSERT INTO page (content, posted, title, heading) VALUES (?, ?, ?, ?)
+22:29:46,095 INFO  [sqlalchemy.engine.base.Engine] ('"qwe"', '2012-02-25 22:29:46.093893', u'qwe', u'qwe')
+22:29:46,096 INFO  [sqlalchemy.engine.base.Engine] COMMIT
+22:29:46,098 INFO  [sqlalchemy.engine.base.Engine] BEGIN (implicit)
+22:29:46,099 INFO  [sqlalchemy.engine.base.Engine] SELECT page.id AS page_id, page.content AS page_content, page.posted AS page_posted, page.title AS page_title, page.heading AS page_heading 
+FROM page 
+WHERE page.id = ?
+22:29:46,100 INFO  [sqlalchemy.engine.base.Engine] (1,)
+22:29:46,102 DEBUG [teg.controller] get single object with id [1]
+22:29:46,104 INFO  [sqlalchemy.engine.base.Engine] SELECT page.id AS page_id, page.content AS page_content, page.posted AS page_posted, page.title AS page_title, page.heading AS page_heading 
+FROM page 
+WHERE page.id = ?
+ LIMIT ? OFFSET ?
+22:29:46,104 INFO  [sqlalchemy.engine.base.Engine] (1, 1, 0)
+22:29:46,105 ERROR [root] Uncaught exception POST /api/page?_dc=1330194586072 (127.0.0.1)
+HTTPRequest(protocol='http', host='127.0.0.1:8080', method='POST', uri='/api/page?_dc=1330194586072', version='HTTP/1.1', remote_ip='127.0.0.1', body='{"id":null,"posted":"","content":"qwe","title":"qwe","heading":"qwe"}', headers={'Origin': 'http://127.0.0.1:8080', 'Content-Length': '69', 'Accept-Language': 'en-us', 'Accept-Encoding': 'gzip, deflate', 'Host': '127.0.0.1:8080', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.52.7 (KHTML, like Gecko) Version/5.1.2 Safari/534.52.7', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8080/ui', 'Cookie': 'auth_token=eyJhaSI6IDMsICJwaSI6IDMsICJhYiI6ICJhcHAxIiwgInJiIjogInJ0MSIsICJwdCI6ICJ1In0=|1330108876|14598b7bff5060b3e6d13a11f95efdd7a1e713cd; user_locale=ZW5fVVM=|1329910444|13a77a78d97b2531fdc4de8c0f90fbb10eec2a11', 'Content-Type': 'application/json'})
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado-1.2.1-py2.7.egg/tornado/web.py", line 861, in _execute
+    getattr(self, self.request.method.lower())(*args, **kwargs)
+  File "/Users/Stan/Sources/tornado-extjs-glue/teg/controller.py", line 51, in wrapper
+    answer = method(self, *args, **kwargs)
+  File "/Users/Stan/Sources/tornado-extjs-glue/example/api.py", line 36, in post
+    return self.generic_get(model.session.query(model.Page), page.id, 'pages')
+  File "/Users/Stan/Sources/tornado-extjs-glue/teg/controller.py", line 135, in generic_get
+    key: [obj.to_json(**kwargs)]
+  File "/Users/Stan/Sources/tornado-extjs-glue/teg/model.py", line 32, in to_json
+    for k in self.__class__.attribute_names(): d[k] = getattr(self, k, None)
+TypeError: unbound method attribute_names() must be called with Page instance as first argument (got nothing instead)
+22:29:46,108 ERROR [root] 500 POST /api/page?_dc=1330194586072 (127.0.0.1) 15.00ms
+22:29:46,219 INFO  [root] 304 GET /static/ext-4.0/resources/themes/images/default/tools/tool-sprites.gif (127.0.0.1) 0.68ms
+22:29:46,220 INFO  [root] 304 GET /static/ext-4.0/resources/themes/images/default/shared/icon-error.gif (127.0.0.1) 0.52ms
+22:30:26,342 INFO  [root] --------------- session started -----------------------
+22:30:26,342 INFO  [root] logging facility to "example.log"
+22:30:26,342 DEBUG [root] logger options: debug=True size=1048576 copies=5 rotating=False
+22:30:29,577 INFO  [root] 200 GET /ui (127.0.0.1) 16.51ms
+22:30:29,685 INFO  [root] 304 GET /static/ext-4.0/ext-all-debug.js?v=e5098 (127.0.0.1) 8.87ms
+22:30:29,686 INFO  [root] 304 GET /static/app.js?v=3c752 (127.0.0.1) 0.54ms
+22:30:29,688 INFO  [root] 304 GET /static/ext-4.0/resources/css/ext-all.css?v=c827c (127.0.0.1) 0.60ms
+22:30:30,091 INFO  [root] 304 GET /static/ext-4.0/resources/themes/images/default/form/text-bg.gif (127.0.0.1) 0.63ms
+22:30:30,161 DEBUG [teg.controller] no filter arguments
+22:30:30,161 DEBUG [teg.controller] no sort arguments
+22:30:30,162 DEBUG [teg.controller] arguments: {'start': ['0'], '_dc': ['1330194630118'], 'limit': ['25'], 'page': ['1']}
+22:30:30,165 INFO  [sqlalchemy.engine.base.Engine] BEGIN (implicit)
+22:30:30,166 INFO  [sqlalchemy.engine.base.Engine] SELECT count(*) AS count_1 
+FROM (SELECT page.id AS page_id, page.content AS page_content, page.posted AS page_posted, page.title AS page_title, page.heading AS page_heading 
+FROM page) AS anon_1
+22:30:30,166 INFO  [sqlalchemy.engine.base.Engine] ()
+22:30:30,172 DEBUG [teg.controller] get page 1, offset 0, limit 25
+22:30:30,173 DEBUG [teg.controller] (SELECT page.id, page.content, page.posted, page.title, page.heading 
+FROM page
+ LIMIT :param_1)
+22:30:30,174 INFO  [sqlalchemy.engine.base.Engine] SELECT page.id AS page_id, page.content AS page_content, page.posted AS page_posted, page.title AS page_title, page.heading AS page_heading 
+FROM page
+ LIMIT ? OFFSET ?
+22:30:30,175 INFO  [sqlalchemy.engine.base.Engine] (25, 0)
+22:30:30,176 ERROR [root] Uncaught exception GET /api/page?_dc=1330194630118&page=1&start=0&limit=25 (127.0.0.1)
+HTTPRequest(protocol='http', host='127.0.0.1:8080', method='GET', uri='/api/page?_dc=1330194630118&page=1&start=0&limit=25', version='HTTP/1.1', remote_ip='127.0.0.1', body='', headers={'Accept-Language': 'en-us', 'Accept-Encoding': 'gzip, deflate', 'X-Requested-With': 'XMLHttpRequest', 'Host': '127.0.0.1:8080', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.52.7 (KHTML, like Gecko) Version/5.1.2 Safari/534.52.7', 'Connection': 'keep-alive', 'Referer': 'http://127.0.0.1:8080/ui', 'Cookie': 'auth_token=eyJhaSI6IDMsICJwaSI6IDMsICJhYiI6ICJhcHAxIiwgInJiIjogInJ0MSIsICJwdCI6ICJ1In0=|1330108876|14598b7bff5060b3e6d13a11f95efdd7a1e713cd; user_locale=ZW5fVVM=|1329910444|13a77a78d97b2531fdc4de8c0f90fbb10eec2a11'})
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado-1.2.1-py2.7.egg/tornado/web.py", line 861, in _execute
+    getattr(self, self.request.method.lower())(*args, **kwargs)
+  File "/Users/Stan/Sources/tornado-extjs-glue/teg/controller.py", line 51, in wrapper
+    answer = method(self, *args, **kwargs)
+  File "/Users/Stan/Sources/tornado-extjs-glue/example/api.py", line 20, in get
+    return self.generic_get(query, oid, 'pages')
+  File "/Users/Stan/Sources/tornado-extjs-glue/teg/controller.py", line 160, in generic_get
+    answer[key].append( obj.to_json(**kwargs))
+  File "/Users/Stan/Sources/tornado-extjs-glue/teg/model.py", line 33, in to_json
+    for k in self.__class__.attribute_names(): d[k] = getattr(self, k, None)
+  File "/Users/Stan/Sources/tornado-extjs-glue/teg/model.py", line 28, in attribute_names
+    return [prop.key for prop in class_mapper(cls).iterate_properties if isinstance(prop, ColumnProperty)]
+NameError: global name 'ColumnProperty' is not defined
+22:30:30,178 ERROR [root] 500 GET /api/page?_dc=1330194630118&page=1&start=0&limit=25 (127.0.0.1) 21.75ms
+22:30:30,179 INFO  [root] 304 GET /static/ext-4.0/resources/themes/images/default/form/exclamation.gif (127.0.0.1) 0.75ms
+22:30:30,182 INFO  [root] 304 GET /static/ext-4.0/resources/themes/images/default/dd/drop-no.gif (127.0.0.1) 0.55ms
+22:30:30,185 INFO  [root] 304 GET /static/ext-4.0/resources/themes/images/default/grid/loading.gif (127.0.0.1) 0.50ms
+22:30:30,186 INFO  [root] 304 GET /static/ext-4.0/resources/themes/images/default/grid/grid3-hd-btn.gif (127.0.0.1) 0.44ms
+22:30:30,300 INFO  [root] 304 GET /static/ext-4.0/resources/themes/images/default/shared/icon-error.gif (127.0.0.1) 0.76ms
+22:30:30,301 INFO  [root] 304 GET /static/ext-4.0/resources/themes/images/default/tools/tool-sprites.gif (127.0.0.1) 0.51ms
+22:31:18,399 INFO  [root] --------------- session started -----------------------
+22:31:18,399 INFO  [root] logging facility to "example.log"
+22:31:18,399 DEBUG [root] logger options: debug=True size=1048576 copies=5 rotating=False
+22:31:22,482 INFO  [root] 200 GET /ui (127.0.0.1) 16.94ms
+22:31:22,624 INFO  [root] 304 GET /static/ext-4.0/ext-all-debug.js?v=e5098 (127.0.0.1) 8.69ms
+22:31:22,628 INFO  [root] 304 GET /static/app.js?v=3c752 (127.0.0.1) 0.59ms
+22:31:22,629 INFO  [root] 304 GET /static/ext-4.0/resources/css/ext-all.css?v=c827c (127.0.0.1) 0.53ms
+22:31:23,072 INFO  [root] 304 GET /static/ext-4.0/resources/themes/images/default/form/text-bg.gif (127.0.0.1) 0.62ms
+22:31:23,181 INFO  [root] 304 GET /static/ext-4.0/resources/themes/images/default/dd/drop-no.gif (127.0.0.1) 0.60ms
+22:31:23,182 INFO  [root] 304 GET /static/ext-4.0/resources/themes/images/default/grid/loading.gif (127.0.0.1) 0.55ms
+22:31:23,184 INFO  [root] 304 GET /static/ext-4.0/resources/themes/images/default/grid/grid3-hd-btn.gif (127.0.0.1) 0.54ms
+22:31:23,191 DEBUG [teg.controller] no filter arguments
+22:31:23,194 DEBUG [teg.controller] no sort arguments
+22:31:23,194 DEBUG [teg.controller] arguments: {'start': ['0'], '_dc': ['1330194683104'], 'limit': ['25'], 'page': ['1']}
+22:31:23,199 INFO  [sqlalchemy.engine.base.Engine] BEGIN (implicit)
+22:31:23,201 INFO  [sqlalchemy.engine.base.Engine] SELECT count(*) AS count_1 
+FROM (SELECT page.id AS page_id, page.content AS page_content, page.posted AS page_posted, page.title AS page_title, page.heading AS page_heading 
+FROM page) AS anon_1
+22:31:23,202 INFO  [sqlalchemy.engine.base.Engine] ()
+22:31:23,204 DEBUG [teg.controller] get page 1, offset 0, limit 25
+22:31:23,205 DEBUG [teg.controller] (SELECT page.id, page.content, page.posted, page.title, page.heading 
+FROM page
+ LIMIT :param_1)
+22:31:23,207 INFO  [sqlalchemy.engine.base.Engine] SELECT page.id AS page_id, page.content AS page_content, page.posted AS page_posted, page.title AS page_title, page.heading AS page_heading 
+FROM page
+ LIMIT ? OFFSET ?
+22:31:23,208 INFO  [sqlalchemy.engine.base.Engine] (25, 0)
+22:31:23,210 DEBUG [teg.controller] 1 objects in page, 1 total objects
+22:31:23,210 ERROR [root] Uncaught exception GET /api/page?_dc=1330194683104&page=1&start=0&limit=25 (127.0.0.1)
+HTTPRequest(protocol='http', host='127.0.0.1:8080', method='GET', uri='/api/page?_dc=1330194683104&page=1&start=0&limit=25', version='HTTP/1.1', remote_ip='127.0.0.1', body='', headers={'Accept-Language': 'en-us', 'Accept-Encoding': 'gzip, deflate', 'X-Requested-With': 'XMLHttpRequest', 'Host': '127.0.0.1:8080', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.52.7 (KHTML, like Gecko) Version/5.1.2 Safari/534.52.7', 'Connection': 'keep-alive', 'Referer': 'http://127.0.0.1:8080/ui', 'Cookie': 'auth_token=eyJhaSI6IDMsICJwaSI6IDMsICJhYiI6ICJhcHAxIiwgInJiIjogInJ0MSIsICJwdCI6ICJ1In0=|1330108876|14598b7bff5060b3e6d13a11f95efdd7a1e713cd; user_locale=ZW5fVVM=|1329910444|13a77a78d97b2531fdc4de8c0f90fbb10eec2a11'})
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado-1.2.1-py2.7.egg/tornado/web.py", line 861, in _execute
+    getattr(self, self.request.method.lower())(*args, **kwargs)
+  File "/Users/Stan/Sources/tornado-extjs-glue/teg/controller.py", line 53, in wrapper
+    self.write(json.dumps(answer, cls=teg.DecimalEncoder))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 201, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 264, in iterencode
+    return _iterencode(o, 0)
+  File "/Users/Stan/Sources/tornado-extjs-glue/teg/__init__.py", line 76, in default
+    return super(DecimalEncoder, self).default(o)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 178, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: datetime.datetime(2012, 2, 25, 22, 29, 46, 93893) is not JSON serializable
+22:31:23,263 ERROR [root] 500 GET /api/page?_dc=1330194683104&page=1&start=0&limit=25 (127.0.0.1) 76.11ms
+22:31:23,264 INFO  [root] 304 GET /static/ext-4.0/resources/themes/images/default/form/exclamation.gif (127.0.0.1) 0.62ms
+22:31:23,361 INFO  [root] 304 GET /static/ext-4.0/resources/themes/images/default/shared/icon-error.gif (127.0.0.1) 0.68ms
+22:31:23,362 INFO  [root] 304 GET /static/ext-4.0/resources/themes/images/default/tools/tool-sprites.gif (127.0.0.1) 0.75ms
+22:33:09,923 INFO  [root] --------------- session started -----------------------
+22:33:09,923 INFO  [root] logging facility to "example.log"
+22:33:09,925 DEBUG [root] logger options: debug=True size=1048576 copies=5 rotating=False
+22:33:22,354 INFO  [sqlalchemy.engine.base.Engine] BEGIN (implicit)
+22:33:22,357 INFO  [sqlalchemy.engine.base.Engine] ROLLBACK
+22:33:22,358 ERROR [root] Uncaught exception POST /api/page?_dc=1330194802326 (127.0.0.1)
+HTTPRequest(protocol='http', host='127.0.0.1:8080', method='POST', uri='/api/page?_dc=1330194802326', version='HTTP/1.1', remote_ip='127.0.0.1', body='{"id":null,"posted":"","content":"asd","title":"asd","heading":"asd"}', headers={'Origin': 'http://127.0.0.1:8080', 'Content-Length': '69', 'Accept-Language': 'en-us', 'Accept-Encoding': 'gzip, deflate', 'Host': '127.0.0.1:8080', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.52.7 (KHTML, like Gecko) Version/5.1.2 Safari/534.52.7', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8080/ui', 'Cookie': 'auth_token=eyJhaSI6IDMsICJwaSI6IDMsICJhYiI6ICJhcHAxIiwgInJiIjogInJ0MSIsICJwdCI6ICJ1In0=|1330108876|14598b7bff5060b3e6d13a11f95efdd7a1e713cd; user_locale=ZW5fVVM=|1329910444|13a77a78d97b2531fdc4de8c0f90fbb10eec2a11', 'Content-Type': 'application/json'})
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado-1.2.1-py2.7.egg/tornado/web.py", line 861, in _execute
+    getattr(self, self.request.method.lower())(*args, **kwargs)
+  File "/Users/Stan/Sources/tornado-extjs-glue/teg/controller.py", line 51, in wrapper
+    answer = method(self, *args, **kwargs)
+  File "/Users/Stan/Sources/tornado-extjs-glue/example/api.py", line 34, in post
+    model.session.commit()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/SQLAlchemy-0.7.0-py2.7-macosx-10.6-intel.egg/sqlalchemy/orm/scoping.py", line 113, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/SQLAlchemy-0.7.0-py2.7-macosx-10.6-intel.egg/sqlalchemy/orm/session.py", line 617, in commit
+    self.transaction.commit()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/SQLAlchemy-0.7.0-py2.7-macosx-10.6-intel.egg/sqlalchemy/orm/session.py", line 293, in commit
+    self._prepare_impl()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/SQLAlchemy-0.7.0-py2.7-macosx-10.6-intel.egg/sqlalchemy/orm/session.py", line 277, in _prepare_impl
+    self.session.flush()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/SQLAlchemy-0.7.0-py2.7-macosx-10.6-intel.egg/sqlalchemy/orm/session.py", line 1466, in flush
+    self._flush(objects)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/SQLAlchemy-0.7.0-py2.7-macosx-10.6-intel.egg/sqlalchemy/orm/session.py", line 1535, in _flush
+    flush_context.execute()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/SQLAlchemy-0.7.0-py2.7-macosx-10.6-intel.egg/sqlalchemy/orm/unitofwork.py", line 327, in execute
+    rec.execute(self)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/SQLAlchemy-0.7.0-py2.7-macosx-10.6-intel.egg/sqlalchemy/orm/unitofwork.py", line 471, in execute
+    uow
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/SQLAlchemy-0.7.0-py2.7-macosx-10.6-intel.egg/sqlalchemy/orm/mapper.py", line 2105, in _save_obj
+    execute(statement, params)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/SQLAlchemy-0.7.0-py2.7-macosx-10.6-intel.egg/sqlalchemy/engine/base.py", line 1294, in execute
+    params)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/SQLAlchemy-0.7.0-py2.7-macosx-10.6-intel.egg/sqlalchemy/engine/base.py", line 1427, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/SQLAlchemy-0.7.0-py2.7-macosx-10.6-intel.egg/sqlalchemy/engine/base.py", line 1494, in _execute_context
+    None, None)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/SQLAlchemy-0.7.0-py2.7-macosx-10.6-intel.egg/sqlalchemy/engine/base.py", line 1490, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/SQLAlchemy-0.7.0-py2.7-macosx-10.6-intel.egg/sqlalchemy/engine/default.py", line 448, in _init_compiled
+    param.append(processors[key](compiled_params[key]))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/SQLAlchemy-0.7.0-py2.7-macosx-10.6-intel.egg/sqlalchemy/dialects/sqlite/base.py", line 132, in process
+    raise TypeError("SQLite DateTime type only accepts Python "
+StatementError: SQLite DateTime type only accepts Python datetime and date objects as input. 'INSERT INTO page (content, posted, title, heading) VALUES (?, ?, ?, ?)' [{'content': u'asd', 'title': u'asd', 'heading': u'asd', 'posted': 1330194802353}]
+22:33:22,364 ERROR [root] 500 POST /api/page?_dc=1330194802326 (127.0.0.1) 16.09ms
+22:34:51,733 INFO  [root] --------------- session started -----------------------
+22:34:51,733 INFO  [root] logging facility to "example.log"
+22:34:51,733 DEBUG [root] logger options: debug=True size=1048576 copies=5 rotating=False
+22:34:54,003 INFO  [root] 200 GET /ui (127.0.0.1) 15.79ms
+22:34:54,068 INFO  [root] 304 GET /static/ext-4.0/resources/css/ext-all.css?v=c827c (127.0.0.1) 9.91ms
+22:34:54,069 INFO  [root] 304 GET /static/ext-4.0/ext-all-debug.js?v=e5098 (127.0.0.1) 0.98ms
+22:34:54,071 INFO  [root] 304 GET /static/app.js?v=3c752 (127.0.0.1) 0.60ms
+22:34:54,534 INFO  [root] 304 GET /static/ext-4.0/resources/themes/images/default/form/text-bg.gif (127.0.0.1) 0.62ms
+22:34:54,548 INFO  [root] 304 GET /static/ext-4.0/resources/themes/images/default/form/exclamation.gif (127.0.0.1) 0.61ms
+22:34:54,550 INFO  [root] 304 GET /static/ext-4.0/resources/themes/images/default/dd/drop-no.gif (127.0.0.1) 1.09ms
+22:34:54,554 INFO  [root] 304 GET /static/ext-4.0/resources/themes/images/default/grid/grid3-hd-btn.gif (127.0.0.1) 0.55ms
+22:34:54,723 DEBUG [teg.controller] no filter arguments
+22:34:54,723 DEBUG [teg.controller] no sort arguments
+22:34:54,724 DEBUG [teg.controller] arguments: {'start': ['0'], '_dc': ['1330194894622'], 'limit': ['25'], 'page': ['1']}
+22:34:54,726 INFO  [sqlalchemy.engine.base.Engine] BEGIN (implicit)
+22:34:54,727 INFO  [sqlalchemy.engine.base.Engine] SELECT count(*) AS count_1 
+FROM (SELECT page.id AS page_id, page.content AS page_content, page.posted AS page_posted, page.title AS page_title, page.heading AS page_heading 
+FROM page) AS anon_1
+22:34:54,727 INFO  [sqlalchemy.engine.base.Engine] ()
+22:34:54,728 DEBUG [teg.controller] get page 1, offset 0, limit 25
+22:34:54,729 DEBUG [teg.controller] (SELECT page.id, page.content, page.posted, page.title, page.heading 
+FROM page
+ LIMIT :param_1)
+22:34:54,730 INFO  [sqlalchemy.engine.base.Engine] SELECT page.id AS page_id, page.content AS page_content, page.posted AS page_posted, page.title AS page_title, page.heading AS page_heading 
+FROM page
+ LIMIT ? OFFSET ?
+22:34:54,730 INFO  [sqlalchemy.engine.base.Engine] (25, 0)
+22:34:54,731 DEBUG [teg.controller] 0 objects in page, 0 total objects
+22:34:54,731 INFO  [root] 200 GET /api/page?_dc=1330194894622&page=1&start=0&limit=25 (127.0.0.1) 12.59ms
+22:34:54,732 INFO  [root] 304 GET /static/ext-4.0/resources/themes/images/default/grid/loading.gif (127.0.0.1) 0.44ms
+22:34:56,788 INFO  [sqlalchemy.engine.base.Engine] INSERT INTO page (content, posted, title, heading) VALUES (?, ?, ?, ?)
+22:34:56,789 INFO  [sqlalchemy.engine.base.Engine] ('"asd"', '2012-02-25 22:34:56.788482', u'asd', u'asd')
+22:34:56,790 INFO  [sqlalchemy.engine.base.Engine] COMMIT
+22:34:56,795 INFO  [sqlalchemy.engine.base.Engine] BEGIN (implicit)
+22:34:56,796 INFO  [sqlalchemy.engine.base.Engine] SELECT page.id AS page_id, page.content AS page_content, page.posted AS page_posted, page.title AS page_title, page.heading AS page_heading 
+FROM page 
+WHERE page.id = ?
+22:34:56,796 INFO  [sqlalchemy.engine.base.Engine] (1,)
+22:34:56,797 DEBUG [teg.controller] get single object with id [1]
+22:34:56,798 INFO  [sqlalchemy.engine.base.Engine] SELECT page.id AS page_id, page.content AS page_content, page.posted AS page_posted, page.title AS page_title, page.heading AS page_heading 
+FROM page 
+WHERE page.id = ?
+ LIMIT ? OFFSET ?
+22:34:56,798 INFO  [sqlalchemy.engine.base.Engine] (1, 1, 0)
+22:34:56,799 ERROR [root] Uncaught exception POST /api/page?_dc=1330194896761 (127.0.0.1)
+HTTPRequest(protocol='http', host='127.0.0.1:8080', method='POST', uri='/api/page?_dc=1330194896761', version='HTTP/1.1', remote_ip='127.0.0.1', body='{"id":null,"posted":"","content":"asd","title":"asd","heading":"asd"}', headers={'Origin': 'http://127.0.0.1:8080', 'Content-Length': '69', 'Accept-Language': 'en-us', 'Accept-Encoding': 'gzip, deflate', 'Host': '127.0.0.1:8080', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.52.7 (KHTML, like Gecko) Version/5.1.2 Safari/534.52.7', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8080/ui', 'Cookie': 'auth_token=eyJhaSI6IDMsICJwaSI6IDMsICJhYiI6ICJhcHAxIiwgInJiIjogInJ0MSIsICJwdCI6ICJ1In0=|1330108876|14598b7bff5060b3e6d13a11f95efdd7a1e713cd; user_locale=ZW5fVVM=|1329910444|13a77a78d97b2531fdc4de8c0f90fbb10eec2a11', 'Content-Type': 'application/json'})
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado-1.2.1-py2.7.egg/tornado/web.py", line 861, in _execute
+    getattr(self, self.request.method.lower())(*args, **kwargs)
+  File "/Users/Stan/Sources/tornado-extjs-glue/teg/controller.py", line 53, in wrapper
+    self.write(json.dumps(answer, cls=teg.DecimalEncoder))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 201, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 264, in iterencode
+    return _iterencode(o, 0)
+  File "/Users/Stan/Sources/tornado-extjs-glue/teg/__init__.py", line 76, in default
+    return super(DecimalEncoder, self).default(o)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 178, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: datetime.datetime(2012, 2, 25, 22, 34, 56, 788482) is not JSON serializable
+22:34:56,803 ERROR [root] 500 POST /api/page?_dc=1330194896761 (127.0.0.1) 16.12ms
+22:34:56,914 INFO  [root] 304 GET /static/ext-4.0/resources/themes/images/default/shared/icon-error.gif (127.0.0.1) 0.63ms
+22:34:56,915 INFO  [root] 304 GET /static/ext-4.0/resources/themes/images/default/tools/tool-sprites.gif (127.0.0.1) 0.48ms
+22:37:55,514 INFO  [root] --------------- session started -----------------------
+22:37:55,514 INFO  [root] logging facility to "example.log"
+22:37:55,514 DEBUG [root] logger options: debug=True size=1048576 copies=5 rotating=False
+22:38:00,543 INFO  [root] 200 GET /ui (127.0.0.1) 15.77ms
+22:38:00,694 INFO  [root] 304 GET /static/ext-4.0/ext-all-debug.js?v=e5098 (127.0.0.1) 8.22ms
+22:38:00,696 INFO  [root] 304 GET /static/app.js?v=3c752 (127.0.0.1) 0.59ms
+22:38:00,698 INFO  [root] 304 GET /static/ext-4.0/resources/css/ext-all.css?v=c827c (127.0.0.1) 0.50ms
+22:38:01,106 INFO  [root] 304 GET /static/ext-4.0/resources/themes/images/default/form/text-bg.gif (127.0.0.1) 0.63ms
+22:38:01,173 INFO  [root] 304 GET /static/ext-4.0/resources/themes/images/default/dd/drop-no.gif (127.0.0.1) 0.59ms
+22:38:01,174 INFO  [root] 304 GET /static/ext-4.0/resources/themes/images/default/grid/loading.gif (127.0.0.1) 0.49ms
+22:38:01,179 DEBUG [teg.controller] no filter arguments
+22:38:01,179 DEBUG [teg.controller] no sort arguments
+22:38:01,179 DEBUG [teg.controller] arguments: {'start': ['0'], '_dc': ['1330195081132'], 'limit': ['25'], 'page': ['1']}
+22:38:01,182 INFO  [sqlalchemy.engine.base.Engine] BEGIN (implicit)
+22:38:01,183 INFO  [sqlalchemy.engine.base.Engine] SELECT count(*) AS count_1 
+FROM (SELECT page.id AS page_id, page.content AS page_content, page.posted AS page_posted, page.title AS page_title, page.heading AS page_heading 
+FROM page) AS anon_1
+22:38:01,183 INFO  [sqlalchemy.engine.base.Engine] ()
+22:38:01,184 DEBUG [teg.controller] get page 1, offset 0, limit 25
+22:38:01,185 DEBUG [teg.controller] (SELECT page.id, page.content, page.posted, page.title, page.heading 
+FROM page
+ LIMIT :param_1)
+22:38:01,186 INFO  [sqlalchemy.engine.base.Engine] SELECT page.id AS page_id, page.content AS page_content, page.posted AS page_posted, page.title AS page_title, page.heading AS page_heading 
+FROM page
+ LIMIT ? OFFSET ?
+22:38:01,186 INFO  [sqlalchemy.engine.base.Engine] (25, 0)
+22:38:01,187 DEBUG [teg.controller] 1 objects in page, 1 total objects
+22:38:01,188 INFO  [root] 200 GET /api/page?_dc=1330195081132&page=1&start=0&limit=25 (127.0.0.1) 12.99ms
+22:38:01,189 INFO  [root] 304 GET /static/ext-4.0/resources/themes/images/default/grid/grid3-hd-btn.gif (127.0.0.1) 0.44ms
+22:38:01,189 INFO  [root] 304 GET /static/ext-4.0/resources/themes/images/default/form/exclamation.gif (127.0.0.1) 0.35ms
