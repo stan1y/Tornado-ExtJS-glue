@@ -1,5 +1,7 @@
 import json
 import logging
+import time
+import datetime
 
 try:
     import cdecimal
@@ -68,10 +70,12 @@ def enable_log(output_path,
             (debug, size, copies, rotating) )
             
 
-#Decimal values encoder
-class DecimalEncoder(json.JSONEncoder):
+#Custom encoder
+class TegEncoder(json.JSONEncoder):
     def default(self, o):
         if isinstance(o, decimal.Decimal):
             return float(o)
-        return super(DecimalEncoder, self).default(o)
+        if isinstance(o, datetime.datetime):
+            return time.mktime(o.timetuple())
+        return super(TegEncoder, self).default(o)
         

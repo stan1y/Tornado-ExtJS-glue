@@ -50,7 +50,7 @@ def jsonify(method):
     def wrapper(self, *args, **kwargs):
         answer = method(self, *args, **kwargs)
         self.set_header('Content-Type', 'application/json')
-        self.write(json.dumps(answer, cls=teg.DecimalEncoder))
+        self.write(json.dumps(answer, cls=teg.TegEncoder))
     return wrapper
 
 class Controller(tornado.web.RequestHandler):

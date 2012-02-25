@@ -2,6 +2,7 @@ import json
 
 from sqlalchemy.sql import  *
 from sqlalchemy.orm import *
+from sqlalchemy.orm.properties import *
 from sqlalchemy import *
 
 #Json-capable SQLAlchemy type
@@ -23,6 +24,7 @@ class JsonType(TypeDecorator):
 # Base class with server side sorting support for ExtJS data store
 class TegModel(object):
     
+    @classmethod
     def attribute_names(cls):
         return [prop.key for prop in class_mapper(cls).iterate_properties if isinstance(prop, ColumnProperty)]
     
@@ -31,6 +33,11 @@ class TegModel(object):
         d = {}
         for k in self.__class__.attribute_names(): d[k] = getattr(self, k, None)
         return d
+    
+    #update instance from json
+    def update(self, data):
+        for name in self.attribute_names():
+            if name in data: setattr(self, name, data[name])
 
     #translate json property name into sql model property name
     @classmethod
