@@ -76,6 +76,6 @@ class TegEncoder(json.JSONEncoder):
         if isinstance(o, decimal.Decimal):
             return float(o)
         if isinstance(o, datetime.datetime):
-            return time.mktime(o.timetuple())
+            return int(time.mktime(o.timetuple())) * 1000
         return super(TegEncoder, self).default(o)
         

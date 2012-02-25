@@ -175,26 +175,31 @@ Ext.define('Example.Grid', {
                 sortable: true,
                 dataIndex: 'id'
             }, {
-                header: 'Email',
+                header: 'Posted',
+                width: 150,
+                sortable: true,
+                dataIndex: 'posted',
+                renderer: function(value) {
+                    return new Date(value);
+                }
+            }, {
+                header: 'Title',
                 flex: 1,
-                sortable: true,
-                dataIndex: 'email',
+                dataIndex: 'title',
                 field: {
                     type: 'textfield'
                 }
             }, {
-                header: 'First',
-                width: 100,
-                sortable: true,
-                dataIndex: 'first',
+                header: 'Heading',
+                flex: 1,
+                dataIndex: 'heading',
                 field: {
                     type: 'textfield'
                 }
             }, {
-                header: 'Last',
-                width: 100,
-                sortable: true,
-                dataIndex: 'last',
+                header: 'Content',
+                flex: 1,
+                dataIndex: 'content',
                 field: {
                     type: 'textfield'
                 }
