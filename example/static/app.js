@@ -304,7 +304,6 @@ Ext.onReady(function(){
                 if (operation.action == 'destroy') {
                     main.child('#form').setActiveRecord(null);
                 }
-                Ext.example.msg(operation.action, operation.resultSet.message);
             }
         }
     });

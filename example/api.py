@@ -34,8 +34,22 @@ class Page(teg.controller.Controller):
         model.session.add(page)
         model.session.commit()
         #return new object
+        self.set_status(201)
+        return self.generic_get(model.session.query(model.Page), page.id, 'pages')
+      
+    @teg.controller.jsonify 
+    def put(self, oid):
+        data = self.get_request_json()
+        page = model.session.query(model.Page).filter_by(id = int(oid)).one()
+        page.update(data)
+        model.session.commit()
+        #return modified object
         return self.generic_get(model.session.query(model.Page), page.id, 'pages')
         
+    @teg.controller.jsonify 
+    def delete(self, oid):
+        page = model.session.query(model.Page).filter_by(id = int(oid)).delete()
+        model.session.commit()        
         
 class Comment(teg.controller.Controller):
     @teg.controller.jsonify
