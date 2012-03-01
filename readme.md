@@ -4,7 +4,7 @@ Tornado-ExtJS-glue provides kickstart environment to write an ExtJS applications
 
 ## What's inside
 
-* **teg.controller**
+### teg.controller
 
 - read requests data as json and create or update models directly with JSON
 - apply server-side sorting, filtering and paging as needed
@@ -12,13 +12,13 @@ Tornado-ExtJS-glue provides kickstart environment to write an ExtJS applications
 - serialize your server side exceptions to js app, so it can give user valid messages
 - helper decorators such as @jsonify and @authenticated aware of ExtJS formats and your ui/api prefixes
 
-* **teg.model**
+### teg.model
 
 - automatically serialize SQLAlchemy models into json used by ExtJS
 - automatically update models from json
 - provide facility to control server-side sorting/filtering
 
-* **teg.exc**
+### teg.exc
 
 - base exception class capable of translation into json data for ExtJS exception handlers
 - classes for various server side exceptions such as NotFound, Unauthorized and BadArguments
