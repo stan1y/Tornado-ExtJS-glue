@@ -15,7 +15,7 @@ setup(
     include_package_data=True,
     install_requires=[ 
     	"tornado==1.2.1",  
-    	"SQLAlchemy==0.7.0",  
+    	"SQLAlchemy==1.3.0",  
     	"nose>=1.1",
     	"cdecimal>=2.2"
     ],
