@@ -14,7 +14,7 @@ setup(
     url="http://endlessinsomnia.com",
     include_package_data=True,
     install_requires=[ 
-    	"tornado==1.2.1",  
+    	"tornado==6.3.2",  
     	"SQLAlchemy==0.7.0",  
     	"nose>=1.1",
     	"cdecimal>=2.2"
